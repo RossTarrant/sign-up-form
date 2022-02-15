@@ -10,7 +10,11 @@
   <body>
     <div class="container">
       <div class="splash">
-        <img src="leaf.jpg" class="leaf" />
+        <img src="mountain.jpg" class="mountain" />
+        <div class="box">
+            <img class="logo" style="display:block; padding:10px;" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png">
+            <h1>Odin</h1>
+        </div>
       </div>
       <div class="content">
         <div class="heading">
@@ -18,7 +22,7 @@
             This is not a real online service! You know you need something like
             this in your life to help you realise your deepest dreams.
           </p>
-          <p>Sign up <em>now</em> to get starter.</p>
+          <p>Sign up <em>now</em> to get started.</p>
           <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form">
@@ -29,7 +33,7 @@
             </div>
             <div class="right">
               <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name"/>
+              <input type="text" name="last-name" id="last-name" class="focus"/>
             </div>
             <div class="left">
               <label for="email">EMAIL</label>
@@ -41,11 +45,11 @@
             </div>
             <div class="left">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password"/>
+              <input type="password" name="password" id="password" class="error"/>
             </div>
             <div class="right">
               <label for="password-confirm">CONFIRM PASSWORD</label>
-              <input type="password" name="password-confirm" id="password-confirm"/>
+              <input type="password" name="password-confirm" id="password-confirm" class="error"/>
             </div>
           </form>
         </div>

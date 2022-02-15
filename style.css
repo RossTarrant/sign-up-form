@@ -3,9 +3,19 @@
     src: url("fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
+@font-face {
+    font-family: Norse;
+    src: url("fonts/Norse-Bold.otf");
+}
+
+html{
+    font-family: OpenSans;
+    font-size: 20px;
+    font-weight: 100;
+}
+
 body{
     background-color: rgb(230, 230, 230);
-    font-family: OpenSans;
     margin: 0px;
     padding: 0px;
     overflow: hidden;
@@ -24,12 +34,46 @@ input{
     display: flex;
     flex-flow: column wrap;
     width: 25vw;
+    height: 3vh;
+    font-family: OpenSans;
+    font-size: 20px;
+    border: 1.5px solid #d3944c;
+    border-radius: 6px;
+}
+
+input:hover{
+    border-color: #946a36;
+}
+
+button{
+    background-color: #d3944c;
+    color: white;
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 580;
+    border: none;
+    border-radius: 6px;
+    width: 200px;
+    height: 46px;
+}
+
+button:hover{
+    background-color: #ca8f4c;
+}
+
+a{
+    color: #d3944c;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #b88144;
+    text-decoration: underline;
 }
 
 .heading, .footer{
     padding: 30px;
-    width: 75%;
-    font-size: 20px;
+    width: 90%;
     font-weight: 600;
 }
 
@@ -46,11 +90,33 @@ input{
 }
 
 .content{
+    padding-top: 12vh;
     width: 70vw;
 }
 
-.leaf{
+.mountain{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 6vh;
+    font-family: Norse;
+    height: 15vh;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    opacity: 60%;
+    bottom: 80vh;
+    gap: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo{
+    height: 100%;
 }
