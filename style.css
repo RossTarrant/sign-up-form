@@ -18,16 +18,18 @@ body{
     background-color: rgb(230, 230, 230);
     margin: 0px;
     padding: 0px;
-    overflow: hidden;
 }
 
 form{
-    background-color: white;
     padding: 30px;
     font-size: 12px;
     display: flex;
     flex-flow: row wrap;
     gap: 20px;
+}
+
+.form{
+    background-color: white;
 }
 
 input{
@@ -105,7 +107,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 6vh;
+    font-size: 5vh;
     font-family: Norse;
     height: 15vh;
     background-color: rgb(0, 0, 0);
@@ -117,6 +119,20 @@ a:hover{
     padding-bottom: 15px;
 }
 
+h1{
+    padding-top: 2vh;
+    padding-right: 2vh;
+}
+
 .logo{
     height: 100%;
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.error-message, .error-message2{
+    color: red;
+    font-weight: 500;
 }

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>Signup Form</title>
   </head>
   <body>
     <div class="container">
@@ -26,35 +27,37 @@
           <p>You <em>know</em> you want to.</p>
         </div>
         <div class="form">
-          <form action="">
+          <form action="example.com/path" method="post" id="signup">
             <div class="left">
               <label for="first-name">FIRST NAME</label>
-              <input type="text" name="first-name" id="first-name"/>
+              <input type="text" name="first-name" id="first-name" required/>
             </div>
             <div class="right">
               <label for="last-name">LAST NAME</label>
-              <input type="text" name="last-name" id="last-name" class="focus"/>
+              <input type="text" name="last-name" id="last-name" class="focus" required/>
             </div>
             <div class="left">
               <label for="email">EMAIL</label>
-              <input type="email" name="email" id="email"/>
+              <input type="email" name="email" id="email" required/>
             </div>
             <div class="right">
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="phone"/>
+              <input type="tel" name="phone" id="phone" required/>
             </div>
             <div class="left">
               <label for="password">PASSWORD</label>
-              <input type="password" name="password" id="password" class="error"/>
+              <input type="password" name="password" id="password" minlength="8" placeholder=" " required/>
             </div>
             <div class="right">
               <label for="password-confirm">CONFIRM PASSWORD</label>
-              <input type="password" name="password-confirm" id="password-confirm" class="error"/>
+              <input type="password" name="password-confirm" id="password-confirm" placeholder=" " required/>
             </div>
+            <div class="error-message"></div>
+            <div class="error-message2"></div>
           </form>
         </div>
         <div class="footer">
-            <button type="submit">Create Account</button>
+            <button type="submit" form="signup">Create Account</button>
           <p>Already have an account? <a href="">Log in</a></p>
         </div>
       </div>
